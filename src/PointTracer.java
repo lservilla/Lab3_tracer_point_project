@@ -19,7 +19,7 @@ public class PointTracer {
         } else if (choice == 2) {
             circleOnCircle();
         } else {
-            //creative;
+            creative();
         }
     }
 
@@ -31,7 +31,6 @@ public class PointTracer {
 
         // create display window for box tracer
         Display box = new Display(tracerLength, pointSize);
-        int h = box.getHeight();
 
         while (true) {
             // tracer moves from right to left
@@ -104,7 +103,98 @@ public class PointTracer {
 
         }
     }
+
     public static void creative() {
-        
+        // note tha the display is 400 by 400
+        // write out "HELLO"
+
+        int pointSize = 10;
+        int tracerLength = 4000;
+        int y;
+        int x;
+
+        // create new display panel
+        Display creative = new Display(tracerLength, pointSize);
+
+        // making the letter "H"
+        for (x = 25; x == 25; x++) {
+            for (y = 150; y <= 250; y++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (y = 200; y == 200; y++) {
+            for (x = 25; x <= 75; x++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (x = 75; x == 75; x++) {
+            for (y = 150; y <= 250; y++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        // making the letter "E"
+        for (y = 150; y == 150; y++) {
+            for (x = 100; x <= 150; x++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (x = 100; x == 100; x++) {
+            for (y = 150; y <= 250; y++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (y = 200; y == 200; y++) {
+            for (x = 100; x <= 150; x++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (y = 250; y == 250; y++) {
+            for (x = 100; x <= 150; x++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        // making the letter "L"
+        for (x = 175; x == 175; x++) {
+            for (y = 150; y <= 250; y++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (y = 250; y == 250; y++) {
+            for (x = 175; x <= 225; x++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        // making the letter "L"
+        for (y = 250; y == 250 ; y++) {
+            for (x = 250; x <= 300; x++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (x = 250; x == 250; x++) {
+            for (y = 150; y <= 250; y++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        // making the letter "O"
+        for (x = 325; x == 325; x++) {
+            for (y = 150; y <= 250; y++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (x = 375; x == 375; x++) {
+            for (y = 150; y <= 250; y++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (y = 150; y == 150 ; y++) {
+            for (x = 325; x <= 375; x++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
+        for (y = 250; y == 250 ; y++) {
+            for (x = 325; x <= 375; x++) {
+                creative.drawNextPoint(x, y);
+            }
+        }
     }
 }
